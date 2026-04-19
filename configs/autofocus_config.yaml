@@ -1,0 +1,19 @@
+dataset:
+  input_glob: "./data/flipped/input/*.jpg"
+  target_glob: "./data/flipped/output/*.jpg"
+  image_size: [256, 256]
+  train_split: 0.70
+  val_split: 0.20
+  test_split: 0.10
+
+training:
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.0001
+  shuffle: true
+  early_stopping_patience: 10
+
+paths:
+  model_output: "./results/models/resunet_autofocus.keras"
+  figure_output_dir: "./results/figures"
+  metrics_output: "./results/metrics/autofocus_metrics.json"
