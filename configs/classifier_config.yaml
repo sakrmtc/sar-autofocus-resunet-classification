@@ -1,0 +1,19 @@
+dataset:
+  mountain_dir: "./data/classification/mountain"
+  sand_dir: "./data/classification/sand"
+  sea_dir: "./data/classification/sea"
+  image_size: [128, 128]
+  test_split: 0.10
+  val_split_from_train: 0.20
+
+training:
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.0001
+  shuffle: true
+  early_stopping_patience: 5
+
+paths:
+  model_output: "./results/models/cnn_classifier.keras"
+  figure_output_dir: "./results/figures"
+  metrics_output: "./results/metrics/classifier_metrics.json"
